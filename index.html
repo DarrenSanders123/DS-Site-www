@@ -2,24 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link href="assets/css/flex.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
     <link href="assets/css/navbar.css" rel="stylesheet">
     <link href="assets/css/text.css" rel="stylesheet">
+    <link href="assets/css/form.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/home.css" rel="stylesheet">
+    <link href="assets/fonts/Comic%20Code%20Coding%20Essentials%20(Ligatures)/Tabular%20Type%20Foundry%20-%20Comic%20Code%20Ligatures%20Regular.otf"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <title>LOGO</title>
 </head>
 <body>
+
+<div class="cover"></div>
+
 <header>
-    <h1 class="logo">LOGO</h1>
+    <h1 class="logo">Darren Sanders</h1>
     <ul class="nav">
-        <li class="navlink"><a href="#">Home</a></li>
-        <li class="navlink"><a href="#">About</a></li>
-        <li class="navlink"><a href="#">Projects</a></li>
-        <li class="navlink"><a href="#">Contact</a></li>
+        <li class="nav-item home"><a href="" >Home</a></li>
+        <li class="nav-item about"><a href="" data-en="About" data-nl="Over mij">About</a></li>
+        <li class="nav-item projects"><a href="" data-en="Projects" data-nl="Projecten">Projects</a></li>
+        <li class="nav-item contact"><a href="" >Contact</a></li>
     </ul>
     <div class="burger">
-        <i class="fas fa-bars"></i>
+        <box-icon data-button-toggle-font class="clickable" name='font-family' title=""></box-icon>
+        <box-icon data-button-toggle-theme class="clickable" name='brightness-half' title=""></box-icon>
+        <box-icon data-button-toggle-language class="clickable" type='solid' name='book-reader' title=""></box-icon>
+        <box-icon data-button-toggle-dropdown name='menu' class="hamburger clickable"></box-icon>
+
     </div>
 </header>
+
+<section id="home" style="height: 500px">
+    <h6 data-nl="Hallo! Ik ben" data-en="Hello I'm">Hello I'm</h6>
+    <h1>Darren Sanders</h1>
+
+</section>
+
+<section id="about" style="height: 5000px; background: aqua">
+
+</section>
+
+<section id="projects" style="height: 5000px; background: brown">
+
+</section>
+
+<section id="contact" style="height: 100px; background: chocolate">
+
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+
+
+<script src="assets/js/navbar/font-toggle.js"></script>
+<script src="assets/js/navbar/theme-switcher.js"></script>
+<script src="assets/js/navbar/navbar-dropdown.js"></script>
+<script src="assets/js/navbar/active-page.js"></script>
+<script src="assets/js/navbar/nav-action.js"></script>
+<script src="assets/js/navbar/language-toggeler.js"></script>
+
+<script>$(document).tooltip()</script>
 
 </body>
 </html>
