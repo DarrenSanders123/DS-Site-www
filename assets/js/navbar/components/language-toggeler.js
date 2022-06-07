@@ -1,4 +1,5 @@
 let languageButton = $(`[data-button-toggle-language]`);
+let html = $(`html`);
 
 $(document).ready(function () {
     toggleLanguage(true);

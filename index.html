@@ -5,20 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
-    <link href="assets/css/navbar.css" rel="stylesheet">
-    <link href="assets/css/text.css" rel="stylesheet">
-    <link href="assets/css/form.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
-    <link href="assets/css/home.css" rel="stylesheet">
     <link href="assets/fonts/Comic%20Code%20Coding%20Essentials%20(Ligatures)/Tabular%20Type%20Foundry%20-%20Comic%20Code%20Ligatures%20Regular.otf"
           rel="stylesheet">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <title>LOGO</title>
+
+    <title>Darren Sanders</title>
 </head>
 <body>
-
-<div class="cover"></div>
 
 <header>
     <h1 class="logo">Darren Sanders</h1>
@@ -47,28 +42,57 @@
 
 </section>
 
-<section id="projects" style="height: 5000px; background: brown">
+<section id="projects">
 
 </section>
 
-<section id="contact" style="height: 100px; background: chocolate">
+<section id="contact">
+    <div id="reviews">
+        <h1>Reviews</h1>
+        <div></div>
+    </div>
 
+    <div id="contact-div">
+        <h1>Contact</h1>
+        <form>
+            <label>Name</label>
+            <input type="text" name="name" placeholder="John Doe">
+
+            <label>Email</label>
+            <input type="email" name="email" placeholder="john@doe.com">
+
+            <label>Message</label>
+            <textarea name="message"></textarea>
+
+            <button type="submit" onclick="alert('sorry, this is not yet implemented');">Send</button>
+        </form>
+    </div>
 </section>
 
-<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-<script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+<div id="footer">
+
+</div>
 
 
-<script src="assets/js/navbar/font-toggle.js"></script>
-<script src="assets/js/navbar/theme-switcher.js"></script>
-<script src="assets/js/navbar/navbar-dropdown.js"></script>
-<script src="assets/js/navbar/active-page.js"></script>
-<script src="assets/js/navbar/nav-action.js"></script>
-<script src="assets/js/navbar/language-toggeler.js"></script>
+<script type="application/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script type="application/javascript" src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script type="application/javascript" src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+<script src="assets/js/modules/jquery.loadTemplate-1.4.4.min.js"></script>
+<script src="assets/js/modules/moment.js"></script>
 
-<script>$(document).tooltip()</script>
+<script type="text/html" id="template">
+    <div>
+        <h5 data-content="header"></h5>
+        <p data-content="body"></p>
+        <h6 data-content="footer"></h6>
+    </div>
+</script>
+
+<script src="assets/js/navbar/_all_.js"></script>
+<script src="assets/js/reviews/_all_.js"></script>
+
+<script type="application/javascript">$(document).tooltip()</script>
 
 </body>
 </html>

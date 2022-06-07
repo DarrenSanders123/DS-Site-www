@@ -1,0 +1,80 @@
+#contact-div {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+
+  background-color: var(--bg-color);
+
+  height: 100%;
+
+  padding-bottom: 5rem;
+
+  & h1 {
+    display: block;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  & form {
+    display: block;
+    min-width: 10rem;
+    width: fit-content;
+    max-width: 50%;
+
+    & label {
+      display: block;
+      color: var(--text-color);
+      width: 25rem;
+      margin: 0;
+    }
+
+    & input, textarea {
+      display: block;
+      width: 25rem;
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: var(--text-color);
+      background-color: var(--bg-color);
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+
+      &.dark {
+        border: none!important;
+        box-shadow: 0 0.5rem 1rem rgba(#000, .15);
+      }
+
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border-radius: .375rem;
+      transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+      margin-bottom: .75rem;
+
+      &:is(textarea) {
+        height: 5rem;
+      }
+    }
+
+    & button {
+      border: none;
+      color: var(--text-color);
+      background-color: var(--accent-color);
+      border-radius: .375rem;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+
+      width: 26.5rem
+    }
+  }
+}

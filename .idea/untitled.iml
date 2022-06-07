@@ -18,5 +18,8 @@
     <orderEntry type="library" name="boxicons" level="application" />
     <orderEntry type="library" name="js-cookie" level="application" />
     <orderEntry type="library" name="all" level="application" />
+    <orderEntry type="library" name="vue" level="application" />
+    <orderEntry type="library" name="@vuelidate" level="application" />
+    <orderEntry type="library" name="vue-demi" level="application" />
   </component>
 </module>

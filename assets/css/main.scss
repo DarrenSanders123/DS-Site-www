@@ -1,3 +1,4 @@
+@import '_all__';
 html,
 body {
   margin: 0;
@@ -13,11 +14,13 @@ body {
   --bg-color: #fff;
   --text-color: #232323;
   --accent-color: blue;
+
 }
 
 .dark {
   --bg-color: #232323;
   --text-color: #ededed;
+  --shadow: true;
 }
 
 .clickable {
