@@ -1,0 +1,33 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  //overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+:root {
+  --bg-color: #fff;
+  --text-color: #232323;
+  --accent-color: blue;
+}
+
+.dark {
+  --bg-color: #232323;
+  --text-color: #ededed;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+
+//.cover {
+//  position: fixed;
+//  height: 100%;
+//  width: 100%;
+//  background: #fff;
+//}

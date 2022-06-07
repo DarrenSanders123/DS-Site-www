@@ -1,0 +1,26 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+:root {
+  --bg-color: #fff;
+  --text-color: #232323;
+  --accent-color: blue;
+}
+
+.dark {
+  --bg-color: #232323;
+  --text-color: #ededed;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */

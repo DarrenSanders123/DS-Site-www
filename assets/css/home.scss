@@ -1,0 +1,12 @@
+#home {
+  background: var(--bg-color);
+  display: flex;
+
+  &>h6 {
+    color: var(--accent-color);
+  }
+
+  &>h1 {
+    color: var(--text-color);
+  }
+}

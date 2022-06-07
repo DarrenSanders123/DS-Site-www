@@ -1,0 +1,18 @@
+.form-select {
+  padding: .375rem .75rem;
+  border-radius: .25rem;
+  appearance:none;
+  font-size: 10px;
+
+
+  &:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 0;
+  }
+
+  &>option {
+    padding: 10px 10px;
+    color: aqua;
+
+  }
+}

@@ -1,0 +1,87 @@
+$spacer: 1rem;
+$spacers: (
+        0: 0,
+        1: $spacer * .25,
+        2: $spacer * .5,
+        3: $spacer,
+        4: $spacer * 1.5,
+        5: $spacer * 3,
+);
+
+
+.m {
+  // margin top
+  &t {
+    @each $index, $spacer in $spacers {
+      &-#{$index} { margin-top: $spacer; }
+    }
+  }
+  // margin bottom
+  &b {
+    @each $index, $spacer in $spacers {
+      &-#{$index} { margin-bottom: $spacer; }
+    }
+  }
+  // margin x (top and bottom)
+  &x {
+    @each $index, $spacer in $spacers {
+      &-#{$index} { margin-top: $spacer; margin-bottom: $spacer; }
+    }
+  }
+  // margin y (left and right)
+  &y {
+    @each $index, $spacer in $spacers {
+      &-#{$index} { margin-left: $spacer; margin-right: $spacer; }
+    }
+  }
+  // margin start (left)
+  &s {
+    @each $index, $spacer in $spacers {
+      &-#{$index} { margin-left: $spacer; }
+    }
+  }
+  // margin end (right)
+  &e {
+    @each $index, $spacer in $spacers {
+      &-#{$index} { margin-right: $spacer; }
+    }
+  }
+}
+.p {
+  // padding top
+  &t {
+    @each $index, $spacer in $spacers {
+      &-#{$index} { padding-top: $spacer; }
+    }
+  }
+  // padding bottom
+  &b {
+    @each $index, $spacer in $spacers {
+      &-#{$index} { padding-bottom: $spacer; }
+    }
+  }
+  // padding x (top and bottom)
+  &x {
+    @each $index, $spacer in $spacers {
+      &-#{$index} { padding-top: $spacer; padding-bottom: $spacer; }
+    }
+  }
+  // padding y (left and right)
+  &y {
+    @each $index, $spacer in $spacers {
+      &-#{$index} { padding-left: $spacer; padding-right: $spacer; }
+    }
+  }
+  // padding start (left)
+  &s {
+    @each $index, $spacer in $spacers {
+      &-#{$index} { padding-left: $spacer; }
+    }
+  }
+  // padding end (right)
+  &e {
+    @each $index, $spacer in $spacers {
+      &-#{$index} { padding-right: $spacer; }
+    }
+  }
+}

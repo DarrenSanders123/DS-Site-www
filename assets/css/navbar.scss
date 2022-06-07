@@ -1,0 +1,112 @@
+
+header {
+  width: 100%;
+  height: 70px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 0.5rem 1rem rgba(#000, .15);
+  background: var(--bg-color);
+  color: var(--text-color);
+  overflow: clip;
+  white-space: nowrap;
+  transition: box-shadow 1000ms ease-in-out;
+
+  @media screen and (max-width: 900px) {
+    justify-content: space-between;
+  }
+
+  &.open {
+    box-shadow: none;
+  }
+
+}
+.logo {
+  letter-spacing: 3px;
+
+  @media screen and (max-width: 900px) {
+    margin-left: 3rem;
+  }
+  @media screen and (max-width: 480px) {
+    margin-left: .5rem;
+  }
+
+}
+
+.hamburger {
+  list-style: none;
+  display: none;
+
+  @media screen and (max-width: 900px) {
+    display: inline-block;
+    margin-right: 3rem;
+  }
+  
+  @media screen and (max-width: 480px) {
+    margin-right: .5rem;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 45%;
+
+  @media screen and (max-width: 900px) {
+    position: fixed;
+    width: 100%;
+    top: -100rem;
+    z-index: -1;
+    display: block;
+    background: var(--bg-color);
+    box-shadow: 0 1rem 1rem rgba(#000, .15);
+    transition: top 700ms ease-in-out;
+  }
+
+  &.show {
+    top: 3rem;
+  }
+
+  & .nav-item {
+    list-style: none;
+    border-bottom: var(--bg-color) solid 2px;
+    border-top: var(--bg-color) solid 2px;
+    margin: .75rem;
+
+    @media screen and (max-width: 1200px) {
+      margin: .75rem;
+    }
+
+    @media screen and (max-width: 900px) {
+      margin-left: 0;
+      margin-right: 5rem;
+      padding: .5rem 3rem;
+    }
+
+    &:hover {
+      transition: border-bottom-color 500ms ease-in-out;
+      border-bottom: var(--accent-color) solid 2px;
+    }
+
+    &.active {
+      transition: border-bottom-color 500ms ease-in-out;
+      border-bottom: var(--accent-color) solid 2px;
+    }
+
+    & a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-size: 1.25rem;
+      padding: .25rem;
+    }
+  }
+}
+
+.burger {
+  font-size: 1.2em;
+}
+
