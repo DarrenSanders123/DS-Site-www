@@ -13,5 +13,10 @@
     <orderEntry type="library" name="all" level="application" />
     <orderEntry type="library" name="boxicons" level="application" />
     <orderEntry type="library" name="js-cookie" level="application" />
+    <orderEntry type="library" name="jquery-3.6.0" level="application" />
+    <orderEntry type="library" name="jquery-ui" level="application" />
+    <orderEntry type="library" name="boxicons" level="application" />
+    <orderEntry type="library" name="js-cookie" level="application" />
+    <orderEntry type="library" name="all" level="application" />
   </component>
 </module>
