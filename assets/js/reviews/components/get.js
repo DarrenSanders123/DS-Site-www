@@ -3,16 +3,12 @@ let reviews = null;
 
 $.ajax({
     method: 'get',
-    crossDomain: true,
-    url: 'https://api.darrensanders.nl/comments.json',
-    dataType: 'jsonp',
+    url: 'https://api.darrensanders.nl/index.php',
     success: function (data) {
         let reviews = [];
 
-        Object.values(data).forEach(val => {
-            Object.values(val).forEach(val2 => {
-                reviews.push(val2);
-            });
+        Object.values(data['reviews']).forEach(val => {
+            reviews.push(val);
         });
 
         displayReviews(reviews);
