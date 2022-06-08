@@ -1,19 +1,24 @@
 const template = $(`#reviews > div`);
 let reviews = null;
 
-$.getJSON('https://api.darrensanders.nl/comments.json','', function (data) {
-    let reviews = [];
+$.ajax({
+    method: 'get',
+    crossDomain: true,
+    url: 'https://api.darrensanders.nl/comments.json',
+    dataType: 'jsonp',
+    success: function (data) {
+        let reviews = [];
 
-    Object.values(data).forEach(val => {
-        Object.values(val).forEach(val2 => {
-            reviews.push(val2);
+        Object.values(data).forEach(val => {
+            Object.values(val).forEach(val2 => {
+                reviews.push(val2);
+            });
         });
-    });
 
-    displayReviews(reviews);
+        displayReviews(reviews);
 
+    }
 })
-
 
 function displayReviews(reviews) {
     let review = null;
