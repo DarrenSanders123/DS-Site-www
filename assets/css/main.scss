@@ -1,17 +1,4 @@
 @import '_all__';
-html,
-body {
-  margin: 0;
-  padding: 0;
-  //overflow: hidden;
-  width: 100vw;
-  max-width: 100vw;
-}
-
-.hidden {
-  display: none;
-}
-
 :root {
   --bg-color: #fff;
   --text-color: #232323;
@@ -23,6 +10,21 @@ body {
   --bg-color: #232323;
   --text-color: #ededed;
 }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  //overflow: hidden;
+  width: 100vw;
+  max-width: 100vw;
+  background-color: var(--bg-color);
+}
+
+.hidden {
+  display: none;
+}
+
 
 .clickable {
   cursor: pointer;
