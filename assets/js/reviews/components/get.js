@@ -1,7 +1,7 @@
 const template = $(`#reviews > div`);
 let reviews = null;
 
-$.getJSON('http://api.darrensanders.nl/comments.json','', function (data) {
+$.getJSON('https://api.darrensanders.nl/comments.json','', function (data) {
     let reviews = [];
 
     Object.values(data).forEach(val => {
