@@ -12,7 +12,8 @@
 }
 
 #reviews div {
-  height: 500px;
+  max-height: 500px;
+  height: fit-content;
   overflow: auto;
   display: flex;
   flex-wrap: wrap;
