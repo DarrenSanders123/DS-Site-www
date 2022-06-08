@@ -199,6 +199,34 @@ header.open {
   font-size: 1.2em;
 }
 
+.burger box-icon {
+  margin-inline: 0.2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .burger {
+    position: fixed;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    top: -100rem;
+    z-index: -1;
+    background: var(--bg-color);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+    transition: top 700ms ease-in-out;
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .burger box-icon {
+    margin-inline: 0.2rem;
+  }
+  .burger box-icon:last-child {
+    margin-right: 2rem;
+  }
+  .burger.show {
+    top: 18rem;
+  }
+}
 #contact-div {
   padding-top: 2rem;
   display: flex;

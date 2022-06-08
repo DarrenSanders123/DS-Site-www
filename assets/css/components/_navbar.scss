@@ -108,5 +108,37 @@ header {
 
 .burger {
   font-size: 1.2em;
+  & box-icon {
+    margin-inline: .2rem;
+  }
+
+
+
+  @media screen and (max-width: 900px) {
+    position: fixed;
+    display: flex;
+    justify-content: end;
+
+    width: 100%;
+    top: -100rem;
+    z-index: -1;
+    background: var(--bg-color);
+    box-shadow: 0 1rem 1rem rgba(#000, .15);
+    transition: top 700ms ease-in-out;
+    padding-top: .5rem;
+    padding-bottom: 1.5rem;
+
+    & box-icon {
+      margin-inline: .2rem;
+      &:last-child {
+        margin-right: 2rem;
+      }
+    }
+
+    &.show {
+      top: 18rem;
+    }
+
+  }
 }
 

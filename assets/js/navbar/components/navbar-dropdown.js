@@ -1,5 +1,5 @@
 const navButton = $(`[data-button-toggle-dropdown]`);
-let nav = $(`.nav`);
+let nav = $(`.nav, .burger`);
 let header = $(`header`);
 
 navButton.click(function () {
