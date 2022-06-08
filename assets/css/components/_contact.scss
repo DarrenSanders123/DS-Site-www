@@ -25,30 +25,20 @@
     justify-content: center;
     flex-direction: column;
 
-    //min-width: 10rem;
-    //width: fit-content;
-    //max-width: 50%;
+    min-width: 20rem;
+    width: 100vw;
+    max-width: 30rem;
+
 
     & label {
       display: block;
       color: var(--text-color);
-      width: 25rem;
-
-      @media screen and (max-width: 580px) {
-        width: 15rem;
-      }
-
-      margin: 0;
+      margin: 0 .5rem;
     }
 
     & input, textarea {
       transition: none;
       display: block;
-      width: 25rem;
-
-      @media screen and (max-width: 580px) {
-        width: 15rem;
-      }
 
       padding: .375rem .75rem;
       font-size: 1rem;
@@ -68,7 +58,8 @@
       -moz-appearance: none;
       appearance: none;
       border-radius: .375rem;
-      margin-bottom: .75rem;
+      margin: .5rem .5rem;
+
 
       &:is(textarea) {
         height: 5rem;
@@ -80,19 +71,14 @@
       color: #fff;
       background-color: var(--accent-color);
       border-radius: .375rem;
-      padding: 15px 32px;
+      padding: 1rem 2rem;
       text-align: center;
       text-decoration: none;
-      display: inline-block;
+      display: block;
       font-size: 16px;
-      margin: 4px 2px;
+
       cursor: pointer;
 
-      width: 26.5rem;
-
-      @media screen and (max-width: 580px) {
-        width: 16.5rem;
-      }
     }
   }
 }
