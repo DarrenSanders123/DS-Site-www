@@ -30,7 +30,6 @@ function toggleTheme(load = false) {
 function setTheme(theme, oldTheme) {
     Cookies.set('theme', theme);
     body.switchClass(oldTheme, theme);
-    $(`input, textarea`).switchClass(oldTheme, theme);
     setIcons(theme);
     themeButton.attr('title', `Set theme to: ${oldTheme}`);
 }
